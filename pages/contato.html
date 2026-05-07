@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voz Delas - Contatos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #FFF9FB;
+        }
+
+        .text-purple-dark {
+            color: #49243E;
+        }
+
+        .text-pink-main {
+            color: #F75A8E;
+        }
+
+        .bg-pink-main {
+            background-color: #F75A8E;
+        }
+
+        .bg-pink-soft {
+            background-color: #FFF0F6;
+        }
+
+        .border-pink-light {
+            border-color: #FDDDE9;
+        }
+
+        .bg-purple-soft {
+            background-color: #F5EAF8;
+        }
+
+        .active-nav-link {
+            color: #F75A8E;
+            font-weight: 600;
+            border-bottom: 2px solid #F75A8E;
+            padding-bottom: 6px;
+        }
+
+        .nav-link {
+            color: #49243E;
+            font-weight: 500;
+            padding-bottom: 8px;
+            /* to align with active link's padding+border */
+            border-bottom: 2px solid transparent;
+            transition: color 0.3s;
+        }
+
+        .nav-link:hover {
+            color: #F75A8E;
+        }
+
+        .btn-gradient {
+            background-image: linear-gradient(to right, #F97CB0, #F75A8E);
+            transition: all 0.3s ease;
+        }
+
+        .btn-gradient:hover {
+            box-shadow: 0 4px 15px 0 rgba(247, 90, 142, 0.45);
+        }
+    </style>
+</head>
+
+<body class="text-purple-dark">
+
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+<header class="Cabecalho py-6 flex justify-between items-center border-b border-pink-light">
+
+    <!-- Logo -->
+    <div class="pai-div flex items-center gap-4">
+
+        <img src="/img/5d143a6e-aa66-4127-a95c-529d70e93eb0.png"
+             alt="Logo Voz Delas"
+             class="w-14 h-14 object-contain">
+
+        <div class="VozDelasText">
+
+            <h1 class="text-3xl font-bold text-purple-dark leading-none">
+                Voz Delas
+            </h1>
+
+            <p class="text-xs text-purple-dark/70">
+                Informação apoio e respeito por todas as mulheres
+            </p>
+
+        </div>
+    </div>
+
+    <!-- Navegação -->
+    <div class="links hidden lg:block">
+
+        <ul class="listas flex items-center gap-10">
+
+            <a href="#">
+                <li class="nav-link list-none">Início</li>
+            </a>
+
+            <a href="#">
+                <li class="nav-link list-none">Direitos</li>
+            </a>
+
+            <a href="#">
+                <li class="nav-link list-none">Saúde</li>
+            </a>
+
+            <a href="#">
+                <li class="nav-link list-none">Ajuda</li>
+            </a>
+
+            <a href="pages/contato.html">
+                <li class="active-nav-link list-none">Contatos</li>
+            </a>
+
+        </ul>
+
+    </div>
+
+    <!-- Botão -->
+    <div class="div-button hidden lg:block">
+
+        <button class="button btn-gradient text-white font-semibold py-3 px-6 rounded-full shadow-lg">
+            Preciso de apoio
+        </button>
+
+    </div>
+
+    <!-- Menu Mobile -->
+    <button class="lg:hidden">
+        <i data-lucide="menu" class="w-8 h-8 text-purple-dark"></i>
+    </button>
+
+</header>
+
+
+
+        <main class="py-12 lg:py-16">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 xl:gap-20 items-start">
+                <!-- Left Column -->
+                <div class="flex flex-col gap-6">
+                    <span
+                        class="bg-pink-soft text-pink-main font-semibold text-sm py-2 px-4 rounded-lg flex items-center gap-2 self-start">
+                        <i data-lucide="mail" class="w-4 h-4"></i>
+                        Fale conosco
+                    </span>
+                    <h2 class="text-5xl lg:text-6xl font-extrabold text-purple-dark leading-tight">
+                        Estamos aqui para te ouvir <span class="text-pink-main">♡</span>
+                    </h2>
+                    <p class="text-base text-purple-dark/80 max-w-md">
+                        Entre em contato conosco para tirar dúvidas, dar sugestões ou pedir apoio. Sua mensagem é muito
+                        importante!
+                    </p>
+
+                    <div class="bg-white border border-pink-light rounded-2xl p-6 sm:p-8 mt-4 shadow-sm">
+                        <div class="flex items-center gap-3 mb-6">
+                            <i data-lucide="mail-plus" class="w-6 h-6 text-pink-main"></i>
+                            <h3 class="text-xl font-bold text-pink-main">Fale conosco</h3>
+                        </div>
+                        <form class="space-y-5">
+                            <div>
+                                <label for="name" class="text-sm font-medium text-purple-dark block mb-1.5">Nome</label>
+                                <input type="text" id="name" placeholder="Digite seu nome"
+                                    class="w-full bg-pink-soft border border-pink-light text-purple-dark text-sm rounded-lg focus:ring-pink-main focus:border-pink-main p-3 placeholder-purple-dark/50">
+                            </div>
+                            <div>
+                                <label for="email"
+                                    class="text-sm font-medium text-purple-dark block mb-1.5">E-mail</label>
+                                <input type="email" id="email" placeholder="Digite seu e-mail"
+                                    class="w-full bg-pink-soft border border-pink-light text-purple-dark text-sm rounded-lg focus:ring-pink-main focus:border-pink-main p-3 placeholder-purple-dark/50">
+                            </div>
+                            <div>
+                                <label for="subject"
+                                    class="text-sm font-medium text-purple-dark block mb-1.5">Assunto</label>
+                                <select id="subject"
+                                    class="w-full bg-pink-soft border border-pink-light text-purple-dark text-sm rounded-lg focus:ring-pink-main focus:border-pink-main p-3 appearance-none">
+                                    <option>Selecione o assunto</option>
+                                    <option>Dúvidas</option>
+                                    <option>Sugestões</option>
+                                    <option>Apoio</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="message"
+                                    class="text-sm font-medium text-purple-dark block mb-1.5">Mensagem</label>
+                                <textarea id="message" rows="4" placeholder="Escreva sua mensagem..."
+                                    class="w-full bg-pink-soft border border-pink-light text-purple-dark text-sm rounded-lg focus:ring-pink-main focus:border-pink-main p-3 placeholder-purple-dark/50"></textarea>
+                            </div>
+                            <button type="submit"
+                                class="w-full bg-pink-main text-white font-bold py-3.5 px-5 rounded-xl flex items-center justify-center gap-2 hover:opacity-90 transition-opacity">
+                                <i data-lucide="send" class="w-5 h-5"></i>
+                                Enviar mensagem
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Right Column -->
+                <div class="flex flex-col gap-8">
+                    <div class="relative w-full max-w-lg mx-auto">
+                        <div class="absolute -top-6 -left-6 w-20 h-20 bg-pink-soft rounded-full opacity-80"></div>
+                        <div class="absolute -bottom-6 -right-6 w-24 h-24 bg-purple-soft rounded-full opacity-80"></div>
+                        <img src="https://cdni.iconscout.com/illustration/premium/thumb/customer-care-4351233-3612053.png"
+                            alt="Ilustração de uma mulher no telefone com um laptop"
+                            class="relative z-10 w-full h-auto">
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-6">
+                        <div class="bg-white border border-pink-light rounded-2xl p-6 sm:p-8 shadow-sm">
+                            <div class="flex items-center gap-3 mb-6">
+                                <i data-lucide="headphones" class="w-6 h-6 text-pink-main"></i>
+                                <h3 class="text-xl font-bold text-pink-main">Outros canais de atendimento</h3>
+                            </div>
+                            <div class="space-y-4">
+                                <div class="bg-pink-soft p-4 rounded-lg flex items-start gap-4">
+                                    <i data-lucide="message-circle"
+                                        class="w-6 h-6 text-pink-main flex-shrink-0 mt-1"></i>
+                                    <div>
+                                        <p class="font-bold text-pink-main">WhatsApp</p>
+                                        <p class="text-sm text-purple-dark font-medium">(11) 99999-9999</p>
+                                        <p class="text-xs text-purple-dark/70">Segunda a sexta, das 8h às 18h</p>
+                                    </div>
+                                </div>
+                                <div class="bg-pink-soft p-4 rounded-lg flex items-start gap-4">
+                                    <i data-lucide="mail" class="w-6 h-6 text-pink-main flex-shrink-0 mt-1"></i>
+                                    <div>
+                                        <p class="font-bold text-pink-main">E-mail</p>
+                                        <p class="text-sm text-purple-dark font-medium">contato@vozdelas.org.br</p>
+                                        <p class="text-xs text-purple-dark/70">Resposta em até 24h úteis</p>
+                                    </div>
+                                </div>
+                                <div class="bg-pink-soft p-4 rounded-lg flex items-start gap-4">
+
+                                    <img src="/img/icons8-instagram-80.png" class="w-6 h-6 mt-1 object-contain">
+
+                                    <div>
+                                        <p class="font-bold text-pink-main">Instagram</p>
+                                        <p class="text-sm text-purple-dark font-medium">@vozdelas.oficial</p>
+                                        <p class="text-xs text-purple-dark/70">Envie uma mensagem no direct</p>
+                                    </div>
+
+                                </div>
+                                <div class="bg-pink-soft p-4 rounded-lg flex items-start gap-4">
+                                    <i data-lucide="map-pin" class="w-6 h-6 text-pink-main flex-shrink-0 mt-1"></i>
+                                    <div>
+                                        <p class="font-bold text-pink-main">Endereço</p>
+                                        <p class="text-sm text-purple-dark font-medium">Rua das Flores, 123 - Centro</p>
+                                        <p class="text-xs text-purple-dark/70">São Paulo - SP, 01000-000</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2 gap-6">
+                            <div
+                                class="bg-white border border-pink-light rounded-2xl p-6 text-center shadow-sm flex flex-col justify-center">
+                                <div class="flex items-center justify-center gap-3 mb-4">
+                                    <i data-lucide="clock" class="w-5 h-5 text-pink-main"></i>
+                                    <h3 class="text-lg font-bold text-pink-main">Horário de atendimento</h3>
+                                </div>
+                                <p class="text-sm text-purple-dark/80">Segunda a sexta</p>
+                                <p class="text-4xl font-extrabold text-pink-main my-1">8h às 18h</p>
+                                <p class="text-sm text-purple-dark/80">Exceto feriados</p>
+                            </div>
+
+                            <div class="bg-purple-soft rounded-2xl p-6 relative overflow-hidden shadow-sm">
+                                <div class="flex items-center gap-3 mb-4">
+                                    <i data-lucide="lock" class="w-5 h-5 text-purple-dark"></i>
+                                    <h3 class="text-lg font-bold text-purple-dark">A sua privacidade</h3>
+                                </div>
+                                <p class="text-sm text-purple-dark/80 max-w-[150px] relative z-10">
+                                    Todas as suas informações são tratadas com respeito, sigilo e responsabilidade.
+                                </p>
+                                <div class="absolute -right-4 -bottom-4 z-0">
+                                    <svg width="120" height="120" viewBox="0 0 120 120" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M60 110C60 110 95 90 95 55V25L60 10L25 25V55C25 90 60 110 60 110Z"
+                                            fill="#FFFFFF" fill-opacity="0.5" />
+                                        <path
+                                            d="M60 101.667C60 101.667 89.1667 84.1667 89.1667 55V30.8333L60 18.3333L30.8333 30.8333V55C30.8333 84.1667 60 101.667 60 101.667Z"
+                                            stroke="#49243E" stroke-opacity="0.2" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M72.5 50.8333H47.5C45.2909 50.8333 43.5 52.6242 43.5 54.8333V62.3333C43.5 64.5424 45.2909 66.3333 47.5 66.3333H72.5C74.7091 66.3333 76.5 64.5424 76.5 62.3333V54.8333C76.5 52.6242 74.7091 50.8333 72.5 50.8333Z"
+                                            fill="#F75A8E" />
+                                        <path
+                                            d="M54.1667 50.8333V45.2083C54.1667 42.0125 56.7792 39.4 60 39.4C63.2208 39.4 65.8333 42.0125 65.8333 45.2083V50.8333"
+                                            stroke="#F75A8E" stroke-width="4" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Banner -->
+            <footer
+                class="mt-16 lg:mt-24 bg-pink-soft rounded-2xl p-6 sm:p-8 flex flex-col sm:flex-row items-center justify-between gap-6">
+                <div class="flex items-center gap-6">
+                    <div class="w-16 h-16 bg-white rounded-full flex-shrink-0 flex items-center justify-center shadow">
+                        <i data-lucide="heart" class="w-8 h-8 text-pink-main fill-current"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-2xl font-bold text-purple-dark">Sua voz importa!</h4>
+                        <p class="text-purple-dark/80">Estamos juntas por um mundo mais justo, seguro e acolhedor para
+                            todas as mulheres.</p>
+                    </div>
+                </div>
+                <div class="text-pink-main/50">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M19.5 12.572c-1.123 2.19-3.333 3.428-5.5 3.428s-4.377-1.238-5.5-3.428" />
+                        <path d="M12 20.947a8.947 8.947 0 1 0 0-17.894 8.947 8.947 0 0 0 0 17.894z" />
+                        <path d="M8.5 7.5c.345-1.035 1.707-1.035 2.052 0" />
+                        <path d="M13.5 7.5c.345-1.035 1.707-1.035 2.052 0" />
+                    </svg>
+                </div>
+            </footer>
+        </main>
+
+    </div>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>
